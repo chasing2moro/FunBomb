@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{D500BE5C-B6A5-9DF8-D31F-C37EB427ACB3}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_0;UNITY_4_3;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\CBX Game\CBX.TileMapping\Unity\TileMap.cs" />
+     <Compile Include="Assets\Scripts\Component\Explosion\BomberExplose.cs" />
+     <Compile Include="Assets\Scripts\Component\Explosion\ExplosionCallBack.cs" />
+     <Compile Include="Assets\Scripts\Component\Explosion\ExplosionManger.cs" />
+     <Compile Include="Assets\Scripts\Component\ObstacleEventReceiver.cs" />
+     <Compile Include="Assets\Scripts\Component\Wander.cs" />
+     <Compile Include="Assets\Scripts\Manager\Explosion\BomberManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\Explosion\BomberPool.cs" />
+     <Compile Include="Assets\Scripts\Manager\Explosion\ExplosionPool.cs" />
+     <Compile Include="Assets\Scripts\Manager\GameObjectPool.cs" />
+     <Compile Include="Assets\Scripts\Manager\Map\TileMap.cs" />
+     <Compile Include="Assets\Scripts\Unit\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Unit\GameUnitObject.cs" />
+     <Compile Include="Assets\Scripts\Unit\Player.cs" />
+     <Compile Include="Assets\Scripts\Utilities\CameraHelper.cs" />
+     <Compile Include="Assets\Scripts\Utilities\CommonHelper.cs" />
+     <Compile Include="Assets\Scripts\Utilities\GenericsSingleton.cs" />
+     <Compile Include="Assets\Scripts\Utilities\PathHelper.cs" />
+     <Compile Include="Assets\Scripts\Utilities\TypeDefine.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\BackgroundParallax.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\BackgroundPropSpawner.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Bomb.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\BombPickup.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Destroyer.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\FollowPlayer.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Gun.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\HealthPickup.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\LayBombs.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Pauser.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\PickupSpawner.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Remover.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Rocket.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Score.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\ScoreShadow.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\SetParticleSortingLayer.cs" />
+     <Compile Include="Assets\Simple2d\Scripts\Spawner.cs" />
+     <Compile Include="Assets\SimplePath\Examples\Code\Interaction_Chase.cs" />
+     <Compile Include="Assets\SimplePath\Examples\Code\Interaction_Patrol.cs" />
+     <Compile Include="Assets\SimplePath\Examples\Code\Interaction_Touch.cs" />
+     <Compile Include="Assets\SimplePath\Examples\Code\Interaction_Wander.cs" />
+     <Compile Include="Assets\SimplePath\Examples\Code\PatrolNodeComponent.cs" />
+     <Compile Include="Assets\SimplePath\Examples\Code\RandomObstacleSpawner.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\BinaryHeap.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\Custom\NavigationAgentComponent_Batch.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\Custom\PathAgentComponent_Batch.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\Custom\PathManagerComponent_Batch.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\Custom\SteeringAgentComponent2D.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\FootprintComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\HeightmapComponent_UnityTerrain.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\NavigationAgentComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\ObstacleGridComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\PathAgentComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\PathGridComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\PathManagerComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\PathTerrainComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\SteeringAgentComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Components\TileMapComponent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Grid.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\INavTarget.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\IPathAgent.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\IPathTerrain.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\ISteeringAgen.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\PathGrid.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\PathPlanParams.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\PathPlanner.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\PathRequest.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Pathing\PathSmoother.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Navigation\Steering\SteeringPath.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Planning\AStarPlanner.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Planning\Node.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Planning\PlanConditions.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Planning\Planner.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Pool.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\SolidityGrid.cs" />
+     <Compile Include="Assets\SimplePath\Main\Code\AI\Utilities.cs" />
+     <None Include="Assets\SimplePath\readme.txt" />
+     <None Include="Assets\Plugins\FingerGestures\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{491A850B-EA6B-3CE2-97D9-F790791A4FC7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
